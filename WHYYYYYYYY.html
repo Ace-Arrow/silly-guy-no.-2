@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="count">Countey: 0</p>
+        <img id="startimage" src="clos da dooooooooooooooor.jpg" style="width:100px">
+        <button onclick="countUp()">+1</button>
+    </body>
+    <script>
+        let n = 0;
+        function countUp(){
+            if(n>=1000){
+                document.getElementById("count").innerHTML= "you did it! you can leave now!";
+                document.getElementById("startimage").src='open na nor.jpg'
+            }
+            
+            else{
+            n+=1;
+            document.getElementById('count').innerHTML="Countey:" +n;
+            document.getElementById("startimage").src='clos da dooooooooooooooor.jpg'
+            }
+        }
+    </script>
+</html>
